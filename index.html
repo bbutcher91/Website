@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Your GitHub Page Title</title>
     <style>
-        /* Add this style within the <style> tag or in your external style.css file */
-        p:hover {
-            color: red; /* Change to your desired color */
+        /* Apply styles to the images */
+        .resized-image {
+            width: 4in; /* Set the width to approximately 4 inches */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .side-by-side {
+            display: flex; /* Use flexbox for layout */
+            gap: 20px; /* Adjust the gap between images */
         }
     </style>
+    <title>Your GitHub Page Title</title>
 </head>
 <body>
     <header>
         <h1>Welcome to My Bucks GitHub Page!</h1>
     </header>
     <main>
+        <div class="side-by-side">
+            <!-- First Image (resized) -->
+            <img src="Images/409302875_681482454098248_2457541796468550038_n.jpg" alt="Moquirri11">
+
+            <!-- Second Image -->
+            <img src="Images/410117029_374506651899259_3830287235994303024_n.jpg" alt="Mofletirri">
+        </div>
+
+        <!-- Additional content if needed -->
         <p>Someday, this will be a beautiful website. For now, it's a work in progress.</p>
-
-        <!-- Add the following line to include an image -->
-        <img src="Images/409302875_681482454098248_2457541796468550038_n.jpg" alt="Moquirri11">
-
-        <!-- Replace "path/to/your/image.jpg" with the actual path to your image -->
-        <!-- Alt text provides a description of the image for accessibility and SEO purposes -->
     </main>
 </body>
 </html>
