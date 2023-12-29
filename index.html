@@ -56,24 +56,34 @@
             color: white; /* Set link color to white */
             text-decoration: none;
         }
-        
+
         .image-text-container {
             display: flex;
-            gap: 20px;
+            flex-direction: column; /* Stack child elements vertically */
+            gap: 20px; /* Vertical space between child elements */
             margin-top: 20px; /* Adjust the margin as needed */
-            margin-bottom: 20px;
-            gap: 20px;
         }
 
         .image-text-container img {
-            width: 50%; /* Adjust the width as needed */
+            width: 100%; /* Full width for the image */
             height: auto;
         }
 
         .image-text-container .text-content {
-            width: 50%; /* Adjust the width as needed */
+            width: 100%; /* Full width for the text container */
         }
-        
+
+        /* New container for the second section with a different background color */
+        .second-section {
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color as needed */
+            padding: 20px;
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+
+        .second-section h2,
+        .second-section p {
+            color: white; /* Set font color to white */
+        }
     </style>
     <title>B^2 Productions</title>
 </head>
@@ -93,26 +103,21 @@
         <p id="services">Welcome to B<sup>2</sup> Productions, where boundless creativity meets precision craftsmanship! As a multi-faceted production house, we pride ourselves on curating one-of-a-kind productions that transcend conventional boundaries. Our dedicated team is driven by a passion for innovation, consistently delivering experiences that captivate and inspire.</p>
 
         <p>At B<sup>2</sup> Productions, we don't just stop at creating extraordinary productions; we also serve as a launchpad for aspiring product designers. Our commitment extends to empowering visionaries like you, providing the expertise and resources necessary to transform your unique ideas into tangible reality. Join us in the realm of B<sup>2</sup>, where brilliance is multiplied, and innovation takes center stage. Let's embark on a journey together, turning imagination into unforgettable experiences and products that stand the test of time.</p>
+    </main>
 
-        <div class="side-by-side">
-            <!-- First Image (resized) -->
-            <img class="resized-image" src="Images/409302875_681482454098248_2457541796468550038_n.jpg" alt="Moquirri11 - Image 1" style="width: 4in; height: auto;">
-
-            <!-- Second Image -->
-            <img src="Images/410117029_374506651899259_3830287235994303024_n.jpg" style="width: 4in;" alt="Moquirri11 - Image 2">
-        </div>
-
+    <!-- New container for the second section -->
+    <div class="second-section">
         <!-- Second Container with Image on Left and Text on Right -->
         <div class="image-text-container">
-            <!-- Image on Left -->
-            <img src="Images/410117029_374506651899259_3830287235994303024_n.jpg"  style="width: 25%; height: auto;">
+            <!-- Image on Top -->
+            <img src="Images/your-image.jpg" alt="Your Image" style="width: 100%; height: auto;">
 
-            <!-- Text on Right -->
+            <!-- Text Below Image -->
             <div class="text-content">
                 <h2>Your Title</h2>
                 <p>Your text goes here.</p>
             </div>
         </div>
-    </main>
+    </div>
 </body>
 </html>
