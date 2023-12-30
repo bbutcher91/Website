@@ -52,7 +52,33 @@
             text-decoration: none;
         }
 
-        /* Rest of your styles... */
+        .image-text-container {
+            display: flex;
+            flex-direction: flex; 
+            gap: 20px; /* Vertical space between child elements */
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+
+        .image-text-container img {
+            width: 100%; /* Full width for the image */
+            height: auto;
+        }
+
+        .image-text-container .text-content {
+            width: 100%; /* Full width for the text container */
+        }
+
+        /* New container for the second section with a different background color */
+        .second-section {
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color as needed */
+            padding: 20px;
+            margin-top: 40px; /* Adjust the margin as needed */
+        }
+
+        .second-section h2,
+        .second-section p {
+            color: white; /* Set font color to white */
+        }
     </style>
     <title>B^2 Productions</title>
 </head>
@@ -75,6 +101,22 @@
         <p>At B<sup>2</sup> Productions, we don't just stop at creating extraordinary productions; we also serve as a launchpad for aspiring product designers. Our commitment extends to empowering visionaries like you, providing the expertise and resources necessary to transform your unique ideas into tangible reality. Join us in the realm of B<sup>2</sup>, where brilliance is multiplied, and innovation takes center stage. Let's embark on a journey together, turning imagination into unforgettable experiences and products that stand the test of time.</p>
     </main>
 
+    <!-- New container for the second section -->
+    <div class="second-section">
+        <!-- Second Container with Image on Left and Text on Right -->
+        <div class="image-text-container">
+            <!-- Image on Top -->
+            <img src="Images/409302875_681482454098248_2457541796468550038_n.jpg" alt="Your Image" style="width: 25%; height: auto;">
+
+            <!-- Text Below Image -->
+            <div class="text-content">
+                <h2>Products</h2>
+                <p>Our work is diverse, from hand-blown glass to CNC custom parts....</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Rest of your HTML content... -->
+
 </body>
 </html>
